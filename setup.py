@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = "assignment3-gazebo_simulation"
+package_name = "assignment3-gazebo_simulation-user"
 
 setup(
     name=package_name,
