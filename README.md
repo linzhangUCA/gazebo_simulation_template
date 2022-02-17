@@ -11,6 +11,7 @@ colcon build
 1. (50%) Create a valid URDF model and verify it in rviz.
 2. (20%) Add collision and intertial perperties to your URDF file and verify in Gazebo.
 3. (30%) Add differential drive plugin to your URDF file and verify it in Gazebo.  
+Feel free to change colors for your links, attach mesh files to your link and build your own gazebo world.
 
 ### Note
 - **Create only one package**
