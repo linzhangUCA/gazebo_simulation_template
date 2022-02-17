@@ -5,6 +5,8 @@ cd ~/<your workspace>/src
 git clone https://github.com/UCAEngineeringPhysics/assignment3-gazebo_simulation-<your github username>.git
 cd ~/<your workspace>
 colcon build
+source ~/<your workspace>/install/setup.bash
+ros2 launch gazebo_simulation simulate_robot.launch.py
 ```
 
 ## Requirement
