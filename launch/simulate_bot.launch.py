@@ -11,11 +11,10 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
-    urdf_package_path = get_package_share_path("urdf_demo")
-    gazebo_package_path = get_package_share_path("gazebo_demo")
-    default_model_path = urdf_package_path / "urdf/bot.urdf.xacro"
-    default_rviz_config_path = urdf_package_path / "rviz/bot.rviz"
-    world_path = gazebo_package_path / "worlds/test_world.sdf"
+    assignment_package_path = get_package_share_path("gazebo_simulation")
+    default_model_path = assignment_package_path / "urdf/robot.urdf.xacro"
+    default_rviz_config_path = assignment_package_path / "rviz/robo.rviz"
+    world_path = assignment_package_path / "worlds/demo_world.sdf"
 
     gui_arg = DeclareLaunchArgument(
         name="gui",
