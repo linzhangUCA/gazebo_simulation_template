@@ -11,7 +11,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
-    assignment_package_path = get_package_share_path("gazebo_simulation")
+    assignment_package_path = get_package_share_path("assignment3-gazebo_simulation")
     default_model_path = assignment_package_path / "urdf/robot.urdf.xacro"
     default_rviz_config_path = assignment_package_path / "rviz/robo.rviz"
     world_path = assignment_package_path / "worlds/demo_world.sdf"
