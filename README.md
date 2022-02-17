@@ -2,11 +2,11 @@
 Simulate the robot we've built in last semester in Gazebo. **Create a single ROS 2 package** to get all the things done. Or you can use this repository to get started:
 ```bash
 cd ~/<your workspace>/src
-git clone https://github.com/UCAEngineeringPhysics/assignment3-gazebo_simulation-<your github username>.git
+git clone git@github.com:UCAEngineeringPhysics/assignment3-gazebo_simulation-<your github username>.git  # use your username
 cd ~/<your workspace>
 colcon build
 source ~/<your workspace>/install/setup.bash
-ros2 launch gazebo_simulation simulate_robot.launch.py
+ros2 launch assignment3-gazebo_simulation simulate_robot.launch.py
 ```
 
 ## Requirement
