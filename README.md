@@ -3,6 +3,9 @@ Simulate the robot we've built in last semester in Gazebo. **Create a single ROS
 ```bash
 cd ~/<your workspace>/src
 git clone git@github.com:UCAEngineeringPhysics/assignment3-gazebo_simulation-<your github username>.git  # use your username
+```
+**Before building this package, make sure you changed all the "user" in this package to your own username**
+```bash
 cd ~/<your workspace>
 colcon build
 source ~/<your workspace>/install/setup.bash
