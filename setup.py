@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = "gazebo_demo"
+package_name = "gazebo_simulation"
 
 setup(
     name=package_name,
@@ -16,14 +16,22 @@ setup(
             glob(os.path.join("launch", "*.launch.py")),
         ),
         (
+            os.path.join("share", package_name, "urdf"),
+            glob(os.path.join("urdf", "*.urdf")),
+        ),
+        (
+            os.path.join("share", package_name, "rviz"),
+            glob(os.path.join("rviz", "*.rviz")),
+        ),
+        (
             os.path.join("share", package_name, "worlds"),
             glob(os.path.join("worlds", "*.sdf")),
         ),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="palebluedotian",
-    maintainer_email="lzhang12@uca.edu",
+    maintainer="name",
+    maintainer_email="name@email.com",
     description="TODO: Package description",
     license="TODO: License declaration",
     tests_require=["pytest"],
